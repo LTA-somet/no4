@@ -1,0 +1,13 @@
+
+UI_Tutorial_Hand.png
+size: 230,250
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+icon-hand
+  rotate: false
+  xy: 2, 2
+  size: 226, 246
+  orig: 236, 250
+  offset: 0, 4
+  index: -1
