@@ -5,17 +5,15 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
-  
-    
-    private void Update()
-    {
-        transform.Rotate(Vector3.forward);
-    }
+ public int blockCount = 0;
+ 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Bolt")
         {
             collision.gameObject.SetActive(false);  
+            blockCount++;
         }
     }
+ 
 }

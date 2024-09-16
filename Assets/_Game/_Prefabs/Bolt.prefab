@@ -78,8 +78,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.5
   m_FrontSortingLayerID: 1242716115
   m_BackSortingLayerID: 1242716115
-  m_FrontSortingLayer: 3
-  m_BackSortingLayer: 3
+  m_FrontSortingLayer: 2
+  m_BackSortingLayer: 2
   m_FrontSortingOrder: 100
   m_BackSortingOrder: -1
   m_IsCustomRangeActive: 1
@@ -111,8 +111,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4778515236909097652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -155,8 +155,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1242716115
-  m_SortingLayer: 3
-  m_SortingOrder: 110
+  m_SortingLayer: 2
+  m_SortingOrder: 80
   m_Sprite: {fileID: 21300000, guid: dda32a68aec24554ea6e6c8897bc701a, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -195,8 +195,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 412554533725737481}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -239,8 +239,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1242716115
-  m_SortingLayer: 3
-  m_SortingOrder: 110
+  m_SortingLayer: 2
+  m_SortingOrder: 80
   m_Sprite: {fileID: 21300000, guid: dda32a68aec24554ea6e6c8897bc701a, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -377,8 +377,8 @@ SpriteMask:
   m_MaskAlphaCutoff: 0.5
   m_FrontSortingLayerID: 1242716115
   m_BackSortingLayerID: 1242716115
-  m_FrontSortingLayer: 3
-  m_BackSortingLayer: 3
+  m_FrontSortingLayer: 2
+  m_BackSortingLayer: 2
   m_FrontSortingOrder: 100
   m_BackSortingOrder: -2
   m_IsCustomRangeActive: 1
@@ -511,7 +511,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1242716115
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0511c88135cc4b34587675b139678158, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -616,6 +616,7 @@ MonoBehaviour:
   hingeJoint2Ds:
   - {fileID: 5800914152842759521}
   - {fileID: 7284283295226121732}
+  BlockVFX: {fileID: 5040324518713540910, guid: 46bfef00aa8c7644ea53800fe27d460e, type: 3}
 --- !u!60 &6284353168005832395
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -660,15 +661,39 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.3314764, y: 0.44613612}
-      - {x: -1.3577158, y: 0.370147}
-      - {x: -1.3487184, y: 0.19088292}
-      - {x: -1.3432906, y: -0.32029414}
-      - {x: -1.3684244, y: -0.4569918}
-      - {x: 1.1620207, y: -0.4027139}
-      - {x: 1.1614592, y: -0.17701882}
-      - {x: 1.1831706, y: 0.18144396}
-      - {x: 1.1628764, y: 0.42713892}
+    - - {x: 2.3780642, y: 0.51420987}
+      - {x: 2.04918, y: 0.5036688}
+      - {x: 2.343769, y: 0.09620285}
+      - {x: 2.2498407, y: -0.2821548}
+      - {x: 1.9258809, y: -0.43437415}
+      - {x: 1.560627, y: -0.34007418}
+      - {x: 1.4170074, y: 0.047332883}
+      - {x: 1.5593972, y: 0.34636438}
+      - {x: 1.9754877, y: 0.5033165}
+      - {x: -1.8980384, y: 0.5037178}
+      - {x: -1.7309942, y: 0.4128784}
+      - {x: -1.4656858, y: 0.20495832}
+      - {x: -1.4383919, y: -0.12365484}
+      - {x: -1.6524091, y: -0.36184132}
+      - {x: -1.9531198, y: -0.41665196}
+      - {x: -2.2513328, y: -0.29479575}
+      - {x: -2.322653, y: 0.013466716}
+      - {x: -2.3275626, y: 0.0036480427}
+      - {x: -2.278382, y: 0.28700304}
+      - {x: -2.3078375, y: 0.29682148}
+      - {x: -1.9622388, y: 0.5048858}
+      - {x: -2.333687, y: 0.5112401}
+      - {x: -2.4730406, y: 0.43000066}
+      - {x: -2.507738, y: 0.28575492}
+      - {x: -2.5149848, y: -0.06458473}
+      - {x: -2.5055108, y: -0.36144638}
+      - {x: -2.4206986, y: -0.45913565}
+      - {x: -2.3026357, y: -0.51273555}
+      - {x: -1.3335865, y: -0.49816376}
+      - {x: 2.3991551, y: -0.51071763}
+      - {x: 2.4996426, y: -0.3569147}
+      - {x: 2.4993856, y: -0.17954299}
+      - {x: 2.4869773, y: 0.3639629}
   m_UseDelaunayMesh: 0
 --- !u!61 &1454689794112193864
 BoxCollider2D:

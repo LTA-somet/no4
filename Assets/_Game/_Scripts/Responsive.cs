@@ -54,7 +54,7 @@ public class Responsive : MonoBehaviour
         image.SetActive(true);
         gameBoard.transform.localScale = new Vector3(1.6f, 1.6f, 1.6f);
         gameBoard.transform.position += new Vector3(-4, 0, 0);
-        title.transform.position += new Vector3(12, -14, 0);
+        title.transform.position += new Vector3(8, -9, 0);
         title.transform.localScale = new Vector3(2, 2, 2);
     } 
     private void ReturnVertical()

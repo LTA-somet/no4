@@ -107,13 +107,6 @@ public class Screw : MonoBehaviour
         else if (listPointInScrew.Count > 0 && !isCheckHoldWood) { }
            
     }
-
-    public void ActiveIntro()
-    {
-        SetAnim(true);
-        Invoke(nameof(DelayMoveIntro), 0.1f);
-    }
-
     private void DelayMoveIntro()
     {
         Vector3 newPos = new Vector3(curHole.transform.position.x, curHole.transform.position.y, transform.position.z);

@@ -9,6 +9,7 @@ public class Block : MonoBehaviour
     private int countHingeJointDis = 0;
     private PolygonCollider2D polygonCollider2D;
     private BoxCollider2D boxCollider2D;
+   [SerializeField] private GameObject BlockVFX;
     private bool isRoi = false;
     void Start()
     {
@@ -46,6 +47,13 @@ public class Block : MonoBehaviour
                 polygonCollider2D.enabled = false;
             }
             isRoi = true;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Destroyer"))
+        {
+            Instantiate(BlockVFX,transform.position,transform.rotation);
         }
     }
 }
